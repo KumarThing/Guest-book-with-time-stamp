@@ -39,6 +39,22 @@ project-folder/
 ```
 
 ___
+##  How to Run the Project 
+1. Clone or download the project files.
+2. Open terminal inside the project folder.
+3. Run the Go server: 
+
+``` sh
+go run .
+```
+4. Open your browser and visit: 
+
+```
+http://localhost:8080
+```
+
+
+___
  
  ## Example Output 
 
