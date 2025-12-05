@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Book with Time Stamp</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Geust book with time stamp</h1>
+
+    <form action="/" method="post" >
+        <input type="text" placeholder="Add New Guest name" name="newguest" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Guest Names:</h2>
+
+    <ul>
+        {{range .}}
+        <li>{{.Name}} - <small>{{.Time}}</small></li>
+        {{else}}
+        <li>No guest yet</li>
+        {{end}}
+    </ul>
+
+    
+</body>
+</html>
